@@ -1,0 +1,8 @@
+library(ggplot2)
+library(sf)
+library(tmap)
+library(tmaptools)
+library(leaflet)
+library(dplyr)
+
+mymap <-st_read("USA_States_Generalized.shp")
