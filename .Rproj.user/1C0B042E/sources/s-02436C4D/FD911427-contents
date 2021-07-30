@@ -6,3 +6,10 @@ library(leaflet)
 library(dplyr)
 
 mymap <-st_read("USA_States_Generalized.shp")
+
+map_and_data <- inner_join(mymap,income_coords)
+str(map_and_data)
+
+ggplot(map_and_data)+
+  geom_sf(aes(fill = Income))+
+  scale_fill_gradient(low="#56b1f7", high="#132b43")
