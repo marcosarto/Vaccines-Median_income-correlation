@@ -6,11 +6,14 @@ remove(income)
 
 vaccinations <- read.csv(file = "dataset/us_state_vaccinations.csv")
 vaccinations <- select(vaccinations, -people_fully_vaccinated_per_hundred)
-vaccinations <- select(vaccinations, -total_vaccinations_per_hundred)
+#vaccinations <- select(vaccinations, -total_vaccinations_per_hundred)
 vaccinations <- select(vaccinations, -share_doses_used)
 vaccinations <- select(vaccinations, -daily_vaccinations_per_million)
-vaccinations <- select(vaccinations, -daily_vaccinations)
+#vaccinations <- select(vaccinations, -daily_vaccinations)
 vaccinations <- select(vaccinations, -daily_vaccinations_raw)
 vaccinations <- select(vaccinations, -distributed_per_hundred)
 vaccinations <- select(vaccinations, -people_vaccinated_per_hundred)
+vaccinations <- vaccinations[!(vaccinations$location=="Veterans Health" | vaccinations$location=="Long Term Care"
+                               |vaccinations$location=="Dept of Defense" | vaccinations$location== "Bureau of Prisons" 
+                               | vaccinations$location=="Republic of Palau"),]
 

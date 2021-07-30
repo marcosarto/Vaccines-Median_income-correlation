@@ -1,0 +1,26 @@
+{
+    "id": "70EB3642",
+    "path": "C:/Users/marco/Desktop/code/ProgettoHIS/dataset/us_state_vaccinations.csv",
+    "project_path": "dataset/us_state_vaccinations.csv",
+    "type": "text",
+    "hash": "11960055",
+    "contents": "",
+    "dirty": false,
+    "created": 1627661838265.0,
+    "source_on_save": false,
+    "relative_order": 8,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "0,15",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1627661881,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1627661881163,
+    "read_only": false,
+    "read_only_alternatives": []
+}
